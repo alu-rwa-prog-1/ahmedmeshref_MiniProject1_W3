@@ -39,6 +39,30 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        currentIndex: 0, // this will be set when a new tab is tapped
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: new Icon(Icons.shopping_cart),
+            label: 'My Cart',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite),
+            label: 'Favourites',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+          ),
+          BottomNavigationBarItem(
+              icon: new Icon(Icons.settings), label: 'Settings')
+        ],
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',

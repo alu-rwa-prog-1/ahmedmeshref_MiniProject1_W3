@@ -12,7 +12,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Shoppy',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(title: 'Grocery Store'),
