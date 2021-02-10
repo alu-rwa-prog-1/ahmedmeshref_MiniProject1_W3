@@ -10,6 +10,16 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  // indicate the index of the selected item in the bottom navBar.
+  int _currentBottomNavItemIndex = 0;
+
+  // change the index of the selected item in the bottom navBar onTap.
+  void _onBottomNavBarTap(int index) {
+    setState(() {
+      _currentBottomNavItemIndex = index;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,8 +36,8 @@ class _HomePageState extends State<HomePage> {
             color: Colors.white,
           ),
           IconButton(
-              icon: Icon(Icons.notifications),
-              onPressed: () {},
+            icon: Icon(Icons.notifications),
+            onPressed: () {},
             color: Colors.black,
           ),
         ],
@@ -43,8 +53,10 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        onTap: _onBottomNavBarTap,
         type: BottomNavigationBarType.fixed,
-        currentIndex: 0, // this will be set when a new tab is tapped
+        currentIndex: _currentBottomNavItemIndex,
+        // this will be set when a new tab is tapped
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
