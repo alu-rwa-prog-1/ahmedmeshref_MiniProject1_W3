@@ -10,20 +10,27 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(
+          widget.title,
+          style: TextStyle(fontSize: 20, color: Colors.white),
+        ),
         backgroundColor: Colors.orangeAccent,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () {},
+            color: Colors.white,
+          ),
+          IconButton(
+              icon: Icon(Icons.notifications),
+              onPressed: () {},
+            color: Colors.black,
+          ),
+        ],
       ),
       body: Center(
         child: Column(
@@ -31,10 +38,6 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             Text(
               'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
             ),
           ],
         ),
@@ -62,11 +65,6 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
               icon: new Icon(Icons.settings), label: 'Settings')
         ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
       ),
     );
   }

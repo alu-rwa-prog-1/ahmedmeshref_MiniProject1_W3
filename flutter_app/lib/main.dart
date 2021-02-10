@@ -10,12 +10,12 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Shoppy',
+      title: 'ShopIt',
       theme: ThemeData(
         primarySwatch: Colors.orange,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(title: 'Grocery Store'),
+      home: HomePage(title: 'ShopIt'),
     );
   }
 }
