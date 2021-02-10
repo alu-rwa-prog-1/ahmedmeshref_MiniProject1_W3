@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -23,11 +24,56 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: ListView(
+          // Remove any padding from the ListView.
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Ahmed Meshref',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      'a.meshref@alustudent.com',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 13,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              decoration: BoxDecoration(
+                color: Colors.orangeAccent,
+              ),
+            ),
+            ListTile(
+              title: Text('Home'),
+              onTap: () {},
+            ),
+            ListTile(
+              title: Text('Settings'),
+              onTap: () {},
+            ),
+          ],
+        ),
+      ),
       appBar: AppBar(
         title: Text(
           widget.title,
           style: TextStyle(fontSize: 20, color: Colors.white),
         ),
+        centerTitle: true,
         backgroundColor: Colors.orangeAccent,
         actions: <Widget>[
           IconButton(
@@ -36,7 +82,7 @@ class _HomePageState extends State<HomePage> {
             color: Colors.white,
           ),
           IconButton(
-            icon: Icon(Icons.notifications),
+            icon: Icon(Icons.notifications_none_rounded),
             onPressed: () {},
             color: Colors.black,
           ),
