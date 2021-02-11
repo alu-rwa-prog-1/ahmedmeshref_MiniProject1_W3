@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_now/home/home.dart';
 
 void main() {
   runApp(App());
