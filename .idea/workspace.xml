@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9513f680-36b1-426c-a49b-f23651656d4a" name="Default Changelist" comment="" />
+    <list default="true" id="9513f680-36b1-426c-a49b-f23651656d4a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/foodNow/lib/home.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodNow/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/foodNow/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodNow/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/foodNow/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,9 +41,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="425" y="134" key="FileChooserDialogImpl" timestamp="1612993564598">
+    <state x="425" y="134" key="FileChooserDialogImpl" timestamp="1613049219318">
       <screen x="0" y="0" width="1500" height="1000" />
     </state>
-    <state x="425" y="134" key="FileChooserDialogImpl/0.0.1500.1000@0.0.1500.1000" timestamp="1612993564598" />
+    <state x="425" y="134" key="FileChooserDialogImpl/0.0.1500.1000@0.0.1500.1000" timestamp="1613049219318" />
   </component>
 </project>

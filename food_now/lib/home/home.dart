@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage> {
             color: Colors.white,
           ),
           IconButton(
-            icon: Icon(Icons.notifications_none_rounded),
+            icon: Icon(Icons.notifications_none),
             onPressed: () {},
             color: Colors.black,
           ),
@@ -115,7 +115,9 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ],
-            )
+            ),
+            Row(
+            ),
           ],
         ),
       ),
