@@ -20,7 +20,7 @@ class CardItem extends StatelessWidget {
   Widget build(BuildContext context) {
     // This size provide you the total height and width of the screen
     return Container(
-      margin: EdgeInsets.only(left: 5, right: 5, top: 10, bottom: 20),
+      margin: EdgeInsets.all(5),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(10),

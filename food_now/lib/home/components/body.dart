@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_now/home/components/card_item.dart';
+import 'package:food_now/home/components/category_item.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -8,7 +9,7 @@ class Body extends StatelessWidget {
       margin: EdgeInsets.all(9.0),
       child: ListView(
         children: [
-          // Categories section
+          // Categories list section
           Row(
             children: [
               Expanded(
@@ -30,6 +31,18 @@ class Body extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          Container (
+            height: 120,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                HomeCategoryItem(title: 'Take Away', iconName: Icons.food_bank,),
+                HomeCategoryItem(title: 'One Plate', iconName: Icons.dialpad_sharp,),
+                HomeCategoryItem(title: 'Drinks', iconName: Icons.local_drink_sharp,),
+                HomeCategoryItem(title: 'Vegan', iconName: Icons.account_tree,)
+              ],
+            ),
           ),
           // Food special section
           Row(
@@ -55,7 +68,7 @@ class Body extends StatelessWidget {
             ],
           ),
           Container(
-            height: 215,
+            height: 200,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
@@ -110,7 +123,7 @@ class Body extends StatelessWidget {
             ],
           ),
           Container(
-            height: 215,
+            height: 200,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
@@ -165,7 +178,7 @@ class Body extends StatelessWidget {
             ],
           ),
           Container(
-            height: 215,
+            height: 200,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
