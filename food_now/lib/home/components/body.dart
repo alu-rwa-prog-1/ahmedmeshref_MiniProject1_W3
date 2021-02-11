@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_now/home/components/card_item.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -11,11 +12,11 @@ class Body extends StatelessWidget {
             children: [
               Expanded(
                   child: Text(
-                    'All Categories',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-                  )),
+                'All Categories',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+              )),
               RaisedButton(
-                elevation : 0,
+                elevation: 0,
                 padding: EdgeInsets.all(0),
                 onPressed: () {},
                 color: Colors.white30,
@@ -30,10 +31,16 @@ class Body extends StatelessWidget {
             ],
           ),
           Row(
+            children: [
+              CardItem(
+                  title: 'Burger',
+                  price: '2000',
+                  imageURL:
+                      'https://top10cairo.com/wp-content/uploads/2015/12/best-burger-restaurant-places-in-cairo-696x365.jpg'),
+            ],
           ),
         ],
       ),
     );
   }
-
 }
