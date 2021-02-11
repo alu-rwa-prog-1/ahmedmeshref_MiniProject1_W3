@@ -54,14 +54,16 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               decoration: BoxDecoration(
-                color: Colors.orangeAccent,
+                color: Theme.of(context).primaryColor,
               ),
             ),
             ListTile(
+              leading: Icon(Icons.home),
               title: Text('Home'),
               onTap: () {},
             ),
             ListTile(
+              leading: Icon(Icons.settings),
               title: Text('Settings'),
               onTap: () {},
             ),
@@ -74,7 +76,7 @@ class _HomePageState extends State<HomePage> {
           style: TextStyle(fontSize: 20, color: Colors.white),
         ),
         centerTitle: true,
-        backgroundColor: Colors.orangeAccent,
+        backgroundColor: Theme.of(context).primaryColor,
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.search),
