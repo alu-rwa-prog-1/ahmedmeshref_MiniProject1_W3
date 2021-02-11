@@ -1,39 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:food_now/home/components/card_item.dart';
 import 'package:food_now/home/components/category_item.dart';
+import 'package:food_now/home/components/section_title.dart';
 
 class Body extends StatelessWidget {
+  final double spaceBetweenSections = 7.0;
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(9.0),
+      margin: EdgeInsets.only(top: 5.0, bottom: 0, left: 9.0, right: 0),
       child: ListView(
         children: [
           // Categories list section
-          Row(
-            children: [
-              Expanded(
-                  child: Text(
-                'All Categories',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-              )),
-              RaisedButton(
-                elevation: 0,
-                padding: EdgeInsets.all(0),
-                onPressed: () {},
-                color: Colors.white30,
-                textColor: Theme.of(context).primaryColor,
-                child: Row(
-                  children: <Widget>[
-                    Text('View all'),
-                    Icon(Icons.keyboard_arrow_right)
-                  ],
-                ),
-              ),
-            ],
-          ),
+          SectionTitle(title: 'All Categories'),
           Container (
-            height: 120,
+            height: double.infinity,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
@@ -44,31 +26,11 @@ class Body extends StatelessWidget {
               ],
             ),
           ),
+          SizedBox(height: spaceBetweenSections,),
           // Food special section
-          Row(
-            children: [
-              Expanded(
-                  child: Text(
-                'Today Special',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-              )),
-              RaisedButton(
-                elevation: 0,
-                padding: EdgeInsets.all(0),
-                onPressed: () {},
-                color: Colors.white30,
-                textColor: Theme.of(context).primaryColor,
-                child: Row(
-                  children: <Widget>[
-                    Text('View all'),
-                    Icon(Icons.keyboard_arrow_right)
-                  ],
-                ),
-              ),
-            ],
-          ),
+          SectionTitle(title: 'Today Special'),
           Container(
-            height: 200,
+            height: double.infinity,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
@@ -99,31 +61,11 @@ class Body extends StatelessWidget {
               ],
             ),
           ),
+          SizedBox(height: spaceBetweenSections,),
           // Drinks section
-          Row(
-            children: [
-              Expanded(
-                  child: Text(
-                    'Drinks',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-                  )),
-              RaisedButton(
-                elevation: 0,
-                padding: EdgeInsets.all(0),
-                onPressed: () {},
-                color: Colors.white30,
-                textColor: Theme.of(context).primaryColor,
-                child: Row(
-                  children: <Widget>[
-                    Text('View all'),
-                    Icon(Icons.keyboard_arrow_right)
-                  ],
-                ),
-              ),
-            ],
-          ),
+          SectionTitle(title: 'Drinks'),
           Container(
-            height: 200,
+            height: double.infinity,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
@@ -154,31 +96,11 @@ class Body extends StatelessWidget {
               ],
             ),
           ),
+          SizedBox(height: spaceBetweenSections,),
           // Snacks section
-          Row(
-            children: [
-              Expanded(
-                  child: Text(
-                    'Snacks',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
-                  )),
-              RaisedButton(
-                elevation: 0,
-                padding: EdgeInsets.all(0),
-                onPressed: () {},
-                color: Colors.white30,
-                textColor: Theme.of(context).primaryColor,
-                child: Row(
-                  children: <Widget>[
-                    Text('View all'),
-                    Icon(Icons.keyboard_arrow_right)
-                  ],
-                ),
-              ),
-            ],
-          ),
+          SectionTitle(title: 'Sneaks'),
           Container(
-            height: 200,
+            height: double.infinity,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
@@ -209,6 +131,8 @@ class Body extends StatelessWidget {
               ],
             ),
           ),
+          SizedBox(height: spaceBetweenSections,),
+
         ],
       ),
     );

@@ -17,3 +17,9 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
+
+/* Tasks
+* reduce space between Text and Icon inside of a Row
+* Set Container height by default so that the ListView works perfectly
+* */
