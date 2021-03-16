@@ -15,7 +15,7 @@ class Body extends StatelessWidget {
           // Categories list section
           SectionTitle(title: 'All Categories'),
           Container (
-            height: double.infinity,
+            height: 120,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
@@ -30,7 +30,7 @@ class Body extends StatelessWidget {
           // Food special section
           SectionTitle(title: 'Today Special'),
           Container(
-            height: double.infinity,
+            height: 200,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
@@ -65,7 +65,7 @@ class Body extends StatelessWidget {
           // Drinks section
           SectionTitle(title: 'Drinks'),
           Container(
-            height: double.infinity,
+            height: 200,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
@@ -100,7 +100,7 @@ class Body extends StatelessWidget {
           // Snacks section
           SectionTitle(title: 'Sneaks'),
           Container(
-            height: double.infinity,
+            height: 200,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
